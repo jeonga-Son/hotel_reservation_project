@@ -2,17 +2,21 @@ package danolja;
 
 import java.util.Scanner;
 
+import room.RoomService;
+
 public class Main {
 
 	public static void main(String[] args) {
+		RoomService rs = new RoomService();
 		Scanner sc = new Scanner(System.in);
+		rs.makeRoom();
 		
 		System.out.println("<'다잡아' 호텔 예약 사이트에 오신걸 환영합니다!>");
 		System.out.println("=====================================");
 		
 		while(true) {
 			int idx = 0;
-			
+			System.out.println("- 원하는 메뉴를 선택하세요.");
 			System.out.println("1. 객실 조회");
 			System.out.println("2. 객실 예약");
 			System.out.println("3. 예약 확인");
@@ -27,6 +31,7 @@ public class Main {
 			
 			switch(menu) {
 			case "1":
+				rs.showRoomList();
 				break;
 				
 			case "2":

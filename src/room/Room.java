@@ -1,36 +1,36 @@
 package room;
 
 public class Room {
-	private String roomType;
-	private String roomNo;
+	private String type;
+	private int roomNo;
 	private int price;
 	private int maxPeopleNum;
 	private int roomAmount;
 	
 	public Room() {}
 
-	public Room(String roomType, String roomNo, int price, int maxPeopleNum, int roomAmount) {
+	public Room(String type, int roomNo, int price, int maxPeopleNum, int roomAmount) {
 		super();
-		this.roomType = roomType;
+		this.type = type;
 		this.roomNo = roomNo;
 		this.price = price;
 		this.maxPeopleNum = maxPeopleNum;
 		this.roomAmount = roomAmount;
 	}
 
-	public String getRoomType() {
-		return roomType;
+	public String getType() {
+		return type;
 	}
 
-	public void setRoomType(String roomType) {
-		this.roomType = roomType;
+	public void setType(String type) {
+		this.type = type;
 	}
 
-	public String getRoomNo() {
+	public int getRoomNo() {
 		return roomNo;
 	}
 
-	public void setRoomNo(String roomNo) {
+	public void setRoomNo(int roomNo) {
 		this.roomNo = roomNo;
 	}
 
@@ -57,5 +57,6 @@ public class Room {
 	public void setRoomAmount(int roomAmount) {
 		this.roomAmount = roomAmount;
 	}
+
 	
 }
