@@ -7,22 +7,22 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("<'´ÙÀâ¾Æ' È£ÅÚ ¿¹¾à »çÀÌÆ®¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù!>");
+		System.out.println("<'ë‹¤ì¡ì•„' í˜¸í…” ì˜ˆì•½ ì‚¬ì´íŠ¸ì— ì˜¤ì‹ ê±¸ í™˜ì˜í•©ë‹ˆë‹¤!>");
 		System.out.println("=====================================");
 		
 		while(true) {
 			int idx = 0;
 			
-			System.out.println("1. °´½Ç Á¶È¸");
-			System.out.println("2. °´½Ç ¿¹¾à");
-			System.out.println("3. ¿¹¾à È®ÀÎ");
-			System.out.println("4. ¿¹¾à Ãë¼Ò");
-			System.out.println("5. Ã¼Å©ÀÎ");
-			System.out.println("6. Ã¼Å©¾Æ¿ô");
-			System.out.println("7. °ü¸®ÀÚ ¸Ş´º");
-			System.out.println("8. Á¾·á");
+			System.out.println("1. ê°ì‹¤ ì¡°íšŒ");
+			System.out.println("2. ê°ì‹¤ ì˜ˆì•½");
+			System.out.println("3. ì˜ˆì•½ í™•ì¸");
+			System.out.println("4. ì˜ˆì•½ ì·¨ì†Œ");
+			System.out.println("5. ì²´í¬ì¸");
+			System.out.println("6. ì²´í¬ì•„ì›ƒ");
+			System.out.println("7. ê´€ë¦¬ì ë©”ë‰´");
+			System.out.println("8. ì¢…ë£Œ");
 			
-			System.out.print("=> ¸Ş´º ÀÔ·Â : ");
+			System.out.print("=> ë©”ë‰´ ì…ë ¥ : ");
 			String menu = sc.nextLine();
 			
 			switch(menu) {
@@ -45,11 +45,11 @@ public class Main {
 				break;
 				
 			case "7":
-				System.out.println("\n°ü¸®ÀÚ ¸Ş´º¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
-				System.out.print("°ü¸®ÀÚ ¾ÆÀÌµğ ÀÔ·Â : ");
+				System.out.println("\nê´€ë¦¬ì ë©”ë‰´ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.");
+				System.out.print("ê´€ë¦¬ì ì•„ì´ë”” ì…ë ¥ : ");
 				String admId = sc.nextLine();
 			
-				System.out.print("°ü¸®ÀÚ ¹øÈ£ ÀÔ·Â : ");
+				System.out.print("ê´€ë¦¬ì ë²ˆí˜¸ ì…ë ¥ : ");
 				String admPw = sc.nextLine();
 				
 				break;
@@ -59,12 +59,12 @@ public class Main {
 				break;
 				
 			default:
-				System.out.println("¸Ş´º¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+				System.out.println("ë©”ë‰´ë¥¼ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n");
 				break;
 			}
 			
 			if (idx == -1) {
-				System.out.println("È£ÅÚ ¿¹¾à ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("í˜¸í…” ì˜ˆì•½ í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			}
 		}
 
