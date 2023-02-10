@@ -22,7 +22,7 @@ public class Main {
 			System.out.println("7. 관리자 메뉴");
 			System.out.println("8. 종료");
 			
-			System.out.print("=> 메뉴 입력 : ");
+			System.out.print("\n=> 메뉴 입력 : ");
 			String menu = sc.nextLine();
 			
 			switch(menu) {
